@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D53EFCE91DC93EBC0010C973 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53EFCE81DC93EBC0010C973 /* LocationController.m */; };
+		D546B0311DC406E70012D9AC /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0301DC406E70012D9AC /* MapView.m */; };
+		D546B0351DC40FCD0012D9AC /* POIListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0341DC40FCD0012D9AC /* POIListTableViewController.m */; };
+		D546B0381DC40FE70012D9AC /* POIDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0371DC40FE70012D9AC /* POIDetailsTableViewController.m */; };
+		D546B03B1DC410100012D9AC /* POIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B03A1DC410100012D9AC /* POIActivityViewController.m */; };
+		D546B0431DC410760012D9AC /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0421DC410760012D9AC /* AppSettings.m */; };
+		D546B0491DC531E60012D9AC /* POIDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0481DC531E60012D9AC /* POIDetailsView.m */; };
+		D546B0571DC5332C0012D9AC /* POIListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0561DC5332C0012D9AC /* POIListTableViewCell.m */; };
+		D546B05A1DC5335B0012D9AC /* POIHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0591DC5335B0012D9AC /* POIHeaderTableViewCell.m */; };
+		D54F5D421DC3DFBC00076548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F5D411DC3DFBC00076548 /* main.m */; };
+		D54F5D451DC3DFBC00076548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F5D441DC3DFBC00076548 /* AppDelegate.m */; };
+		D54F5D4E1DC3DFBC00076548 /* GeoTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D54F5D4C1DC3DFBC00076548 /* GeoTask.xcdatamodeld */; };
+		D54F5D501DC3DFBC00076548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54F5D4F1DC3DFBC00076548 /* Assets.xcassets */; };
+		D54F5D5D1DC3E06600076548 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F5D5C1DC3E06600076548 /* MapViewController.m */; };
+		D575B7421DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D575B73F1DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.m */; };
+		D575B7431DC7FB5C00D54EC7 /* TapCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = D575B7411DC7FB5C00D54EC7 /* TapCoordinate.m */; };
+		D5B29ECF1DC53F8A0052F3E6 /* POIActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29ECE1DC53F8A0052F3E6 /* POIActivityTableViewCell.m */; };
+		D5B29ED21DC556EA0052F3E6 /* POIActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29ED11DC556EA0052F3E6 /* POIActivityView.m */; };
+		D5B29EE61DC6D1010052F3E6 /* Activity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29ED71DC6D1010052F3E6 /* Activity+CoreDataProperties.m */; };
+		D5B29EE71DC6D1010052F3E6 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29ED91DC6D1010052F3E6 /* Activity.m */; };
+		D5B29EEA1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EDF1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m */; };
+		D5B29EEB1DC6D1010052F3E6 /* WorkingArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE11DC6D1010052F3E6 /* WorkingArea.m */; };
+		D5B29EEC1DC6D1010052F3E6 /* POI+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE31DC6D1010052F3E6 /* POI+CoreDataProperties.m */; };
+		D5B29EED1DC6D1010052F3E6 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE51DC6D1010052F3E6 /* POI.m */; };
+		FE8D76193A37E6FBEF2AA3EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F31A907FBA7232013CBD9F7 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34410877A164530666E4A806 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9F31A907FBA7232013CBD9F7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D53EFCE71DC93EBC0010C973 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		D53EFCE81DC93EBC0010C973 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		D546B02F1DC406E70012D9AC /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		D546B0301DC406E70012D9AC /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		D546B0331DC40FCD0012D9AC /* POIListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIListTableViewController.h; sourceTree = "<group>"; };
+		D546B0341DC40FCD0012D9AC /* POIListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIListTableViewController.m; sourceTree = "<group>"; };
+		D546B0361DC40FE70012D9AC /* POIDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIDetailsTableViewController.h; sourceTree = "<group>"; };
+		D546B0371DC40FE70012D9AC /* POIDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIDetailsTableViewController.m; sourceTree = "<group>"; };
+		D546B0391DC410100012D9AC /* POIActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIActivityViewController.h; sourceTree = "<group>"; };
+		D546B03A1DC410100012D9AC /* POIActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIActivityViewController.m; sourceTree = "<group>"; };
+		D546B03D1DC410400012D9AC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D546B0411DC410760012D9AC /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		D546B0421DC410760012D9AC /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		D546B0471DC531E60012D9AC /* POIDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIDetailsView.h; sourceTree = "<group>"; };
+		D546B0481DC531E60012D9AC /* POIDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIDetailsView.m; sourceTree = "<group>"; };
+		D546B0551DC5332C0012D9AC /* POIListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIListTableViewCell.h; sourceTree = "<group>"; };
+		D546B0561DC5332C0012D9AC /* POIListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIListTableViewCell.m; sourceTree = "<group>"; };
+		D546B0581DC5335B0012D9AC /* POIHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIHeaderTableViewCell.h; sourceTree = "<group>"; };
+		D546B0591DC5335B0012D9AC /* POIHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIHeaderTableViewCell.m; sourceTree = "<group>"; };
+		D54F5D3D1DC3DFBC00076548 /* GeoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54F5D411DC3DFBC00076548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D54F5D431DC3DFBC00076548 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D54F5D441DC3DFBC00076548 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D54F5D4D1DC3DFBC00076548 /* GeoTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoTask.xcdatamodel; sourceTree = "<group>"; };
+		D54F5D4F1DC3DFBC00076548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D54F5D541DC3DFBC00076548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54F5D5B1DC3E06600076548 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D54F5D5C1DC3E06600076548 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D575B73E1DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TapCoordinate+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D575B73F1DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TapCoordinate+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D575B7401DC7FB5C00D54EC7 /* TapCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapCoordinate.h; sourceTree = "<group>"; };
+		D575B7411DC7FB5C00D54EC7 /* TapCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapCoordinate.m; sourceTree = "<group>"; };
+		D5B29ECD1DC53F8A0052F3E6 /* POIActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIActivityTableViewCell.h; sourceTree = "<group>"; };
+		D5B29ECE1DC53F8A0052F3E6 /* POIActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIActivityTableViewCell.m; sourceTree = "<group>"; };
+		D5B29ED01DC556EA0052F3E6 /* POIActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIActivityView.h; sourceTree = "<group>"; };
+		D5B29ED11DC556EA0052F3E6 /* POIActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIActivityView.m; sourceTree = "<group>"; };
+		D5B29ED61DC6D1010052F3E6 /* Activity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Activity+CoreDataProperties.h"; path = "CoreData/Activity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D5B29ED71DC6D1010052F3E6 /* Activity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Activity+CoreDataProperties.m"; path = "CoreData/Activity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D5B29ED81DC6D1010052F3E6 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Activity.h; path = CoreData/Activity.h; sourceTree = "<group>"; };
+		D5B29ED91DC6D1010052F3E6 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Activity.m; path = CoreData/Activity.m; sourceTree = "<group>"; };
+		D5B29EDE1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WorkingArea+CoreDataProperties.h"; path = "CoreData/WorkingArea+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D5B29EDF1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WorkingArea+CoreDataProperties.m"; path = "CoreData/WorkingArea+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D5B29EE01DC6D1010052F3E6 /* WorkingArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkingArea.h; path = CoreData/WorkingArea.h; sourceTree = "<group>"; };
+		D5B29EE11DC6D1010052F3E6 /* WorkingArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkingArea.m; path = CoreData/WorkingArea.m; sourceTree = "<group>"; };
+		D5B29EE21DC6D1010052F3E6 /* POI+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "POI+CoreDataProperties.h"; path = "CoreData/POI+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D5B29EE31DC6D1010052F3E6 /* POI+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "POI+CoreDataProperties.m"; path = "CoreData/POI+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D5B29EE41DC6D1010052F3E6 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POI.h; path = CoreData/POI.h; sourceTree = "<group>"; };
+		D5B29EE51DC6D1010052F3E6 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POI.m; path = CoreData/POI.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D54F5D3A1DC3DFBC00076548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8D76193A37E6FBEF2AA3EB /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E63700D5EBCC11AD3AD635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34410877A164530666E4A806 /* Pods.debug.xcconfig */,
+				B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B7043BB5DF92A0A3E3AE21D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F31A907FBA7232013CBD9F7 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D546B02E1DC406D30012D9AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D546B02F1DC406E70012D9AC /* MapView.h */,
+				D546B0301DC406E70012D9AC /* MapView.m */,
+				D546B0471DC531E60012D9AC /* POIDetailsView.h */,
+				D546B0481DC531E60012D9AC /* POIDetailsView.m */,
+				D5B29ED01DC556EA0052F3E6 /* POIActivityView.h */,
+				D5B29ED11DC556EA0052F3E6 /* POIActivityView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D546B0321DC40F7E0012D9AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D546B02E1DC406D30012D9AC /* Views */,
+				D546B05B1DC5336C0012D9AC /* Cells */,
+				D54F5D5B1DC3E06600076548 /* MapViewController.h */,
+				D54F5D5C1DC3E06600076548 /* MapViewController.m */,
+				D546B0331DC40FCD0012D9AC /* POIListTableViewController.h */,
+				D546B0341DC40FCD0012D9AC /* POIListTableViewController.m */,
+				D546B0361DC40FE70012D9AC /* POIDetailsTableViewController.h */,
+				D546B0371DC40FE70012D9AC /* POIDetailsTableViewController.m */,
+				D546B0391DC410100012D9AC /* POIActivityViewController.h */,
+				D546B03A1DC410100012D9AC /* POIActivityViewController.m */,
+				D53EFCE71DC93EBC0010C973 /* LocationController.h */,
+				D53EFCE81DC93EBC0010C973 /* LocationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D546B03C1DC410210012D9AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D54F5D4C1DC3DFBC00076548 /* GeoTask.xcdatamodeld */,
+				D5B29EEE1DC6D10D0052F3E6 /* Activity */,
+				D5B29EEF1DC6D11B0052F3E6 /* TapCoordinate */,
+				D5B29EF01DC6D1240052F3E6 /* WorkingArea */,
+				D5B29EF11DC6D1300052F3E6 /* POI */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D546B05B1DC5336C0012D9AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D546B0551DC5332C0012D9AC /* POIListTableViewCell.h */,
+				D546B0561DC5332C0012D9AC /* POIListTableViewCell.m */,
+				D546B0581DC5335B0012D9AC /* POIHeaderTableViewCell.h */,
+				D546B0591DC5335B0012D9AC /* POIHeaderTableViewCell.m */,
+				D5B29ECD1DC53F8A0052F3E6 /* POIActivityTableViewCell.h */,
+				D5B29ECE1DC53F8A0052F3E6 /* POIActivityTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D54F5D341DC3DFBC00076548 = {
+			isa = PBXGroup;
+			children = (
+				D54F5D3F1DC3DFBC00076548 /* GeoTask */,
+				D54F5D3E1DC3DFBC00076548 /* Products */,
+				00E63700D5EBCC11AD3AD635 /* Pods */,
+				5B7043BB5DF92A0A3E3AE21D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D54F5D3E1DC3DFBC00076548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54F5D3D1DC3DFBC00076548 /* GeoTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D54F5D3F1DC3DFBC00076548 /* GeoTask */ = {
+			isa = PBXGroup;
+			children = (
+				D546B03C1DC410210012D9AC /* Model */,
+				D546B0321DC40F7E0012D9AC /* Controller */,
+				D5B29EF21DC6D1450052F3E6 /* Configuration */,
+				D54F5D4F1DC3DFBC00076548 /* Assets.xcassets */,
+				D54F5D541DC3DFBC00076548 /* Info.plist */,
+				D54F5D401DC3DFBC00076548 /* Supporting Files */,
+			);
+			path = GeoTask;
+			sourceTree = "<group>";
+		};
+		D54F5D401DC3DFBC00076548 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D54F5D411DC3DFBC00076548 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5B29EEE1DC6D10D0052F3E6 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D5B29ED61DC6D1010052F3E6 /* Activity+CoreDataProperties.h */,
+				D5B29ED71DC6D1010052F3E6 /* Activity+CoreDataProperties.m */,
+				D5B29ED81DC6D1010052F3E6 /* Activity.h */,
+				D5B29ED91DC6D1010052F3E6 /* Activity.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		D5B29EEF1DC6D11B0052F3E6 /* TapCoordinate */ = {
+			isa = PBXGroup;
+			children = (
+				D575B73E1DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.h */,
+				D575B73F1DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.m */,
+				D575B7401DC7FB5C00D54EC7 /* TapCoordinate.h */,
+				D575B7411DC7FB5C00D54EC7 /* TapCoordinate.m */,
+			);
+			name = TapCoordinate;
+			sourceTree = "<group>";
+		};
+		D5B29EF01DC6D1240052F3E6 /* WorkingArea */ = {
+			isa = PBXGroup;
+			children = (
+				D5B29EDE1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.h */,
+				D5B29EDF1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m */,
+				D5B29EE01DC6D1010052F3E6 /* WorkingArea.h */,
+				D5B29EE11DC6D1010052F3E6 /* WorkingArea.m */,
+			);
+			name = WorkingArea;
+			sourceTree = "<group>";
+		};
+		D5B29EF11DC6D1300052F3E6 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				D5B29EE21DC6D1010052F3E6 /* POI+CoreDataProperties.h */,
+				D5B29EE31DC6D1010052F3E6 /* POI+CoreDataProperties.m */,
+				D5B29EE41DC6D1010052F3E6 /* POI.h */,
+				D5B29EE51DC6D1010052F3E6 /* POI.m */,
+			);
+			name = POI;
+			sourceTree = "<group>";
+		};
+		D5B29EF21DC6D1450052F3E6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D54F5D431DC3DFBC00076548 /* AppDelegate.h */,
+				D54F5D441DC3DFBC00076548 /* AppDelegate.m */,
+				D546B0411DC410760012D9AC /* AppSettings.h */,
+				D546B0421DC410760012D9AC /* AppSettings.m */,
+				D546B03D1DC410400012D9AC /* Constants.h */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D54F5D3C1DC3DFBC00076548 /* GeoTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54F5D571DC3DFBC00076548 /* Build configuration list for PBXNativeTarget "GeoTask" */;
+			buildPhases = (
+				AF733DE817D03ACF8AC628C5 /* Check Pods Manifest.lock */,
+				D54F5D391DC3DFBC00076548 /* Sources */,
+				D54F5D3A1DC3DFBC00076548 /* Frameworks */,
+				D54F5D3B1DC3DFBC00076548 /* Resources */,
+				300D7BC9410A768990C02D13 /* Embed Pods Frameworks */,
+				BCE399EA2B0759D3B5A04BA9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoTask;
+			productName = GeoTask;
+			productReference = D54F5D3D1DC3DFBC00076548 /* GeoTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D54F5D351DC3DFBC00076548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Denis Katic";
+				TargetAttributes = {
+					D54F5D3C1DC3DFBC00076548 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NSF6U65Y2P;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D54F5D381DC3DFBC00076548 /* Build configuration list for PBXProject "GeoTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D54F5D341DC3DFBC00076548;
+			productRefGroup = D54F5D3E1DC3DFBC00076548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D54F5D3C1DC3DFBC00076548 /* GeoTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D54F5D3B1DC3DFBC00076548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54F5D501DC3DFBC00076548 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300D7BC9410A768990C02D13 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF733DE817D03ACF8AC628C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE399EA2B0759D3B5A04BA9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D54F5D391DC3DFBC00076548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D546B0431DC410760012D9AC /* AppSettings.m in Sources */,
+				D546B0381DC40FE70012D9AC /* POIDetailsTableViewController.m in Sources */,
+				D5B29EEA1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m in Sources */,
+				D5B29EED1DC6D1010052F3E6 /* POI.m in Sources */,
+				D575B7431DC7FB5C00D54EC7 /* TapCoordinate.m in Sources */,
+				D546B03B1DC410100012D9AC /* POIActivityViewController.m in Sources */,
+				D5B29ECF1DC53F8A0052F3E6 /* POIActivityTableViewCell.m in Sources */,
+				D5B29EEB1DC6D1010052F3E6 /* WorkingArea.m in Sources */,
+				D53EFCE91DC93EBC0010C973 /* LocationController.m in Sources */,
+				D5B29EEC1DC6D1010052F3E6 /* POI+CoreDataProperties.m in Sources */,
+				D546B0311DC406E70012D9AC /* MapView.m in Sources */,
+				D546B0491DC531E60012D9AC /* POIDetailsView.m in Sources */,
+				D54F5D451DC3DFBC00076548 /* AppDelegate.m in Sources */,
+				D54F5D4E1DC3DFBC00076548 /* GeoTask.xcdatamodeld in Sources */,
+				D5B29EE61DC6D1010052F3E6 /* Activity+CoreDataProperties.m in Sources */,
+				D54F5D421DC3DFBC00076548 /* main.m in Sources */,
+				D5B29EE71DC6D1010052F3E6 /* Activity.m in Sources */,
+				D546B05A1DC5335B0012D9AC /* POIHeaderTableViewCell.m in Sources */,
+				D54F5D5D1DC3E06600076548 /* MapViewController.m in Sources */,
+				D546B0571DC5332C0012D9AC /* POIListTableViewCell.m in Sources */,
+				D575B7421DC7FB5C00D54EC7 /* TapCoordinate+CoreDataProperties.m in Sources */,
+				D5B29ED21DC556EA0052F3E6 /* POIActivityView.m in Sources */,
+				D546B0351DC40FCD0012D9AC /* POIListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D54F5D551DC3DFBC00076548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D54F5D561DC3DFBC00076548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D54F5D581DC3DFBC00076548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34410877A164530666E4A806 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GeoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.geotask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D54F5D591DC3DFBC00076548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GeoTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.geotask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D54F5D381DC3DFBC00076548 /* Build configuration list for PBXProject "GeoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54F5D551DC3DFBC00076548 /* Debug */,
+				D54F5D561DC3DFBC00076548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54F5D571DC3DFBC00076548 /* Build configuration list for PBXNativeTarget "GeoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54F5D581DC3DFBC00076548 /* Debug */,
+				D54F5D591DC3DFBC00076548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D54F5D4C1DC3DFBC00076548 /* GeoTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D54F5D4D1DC3DFBC00076548 /* GeoTask.xcdatamodel */,
+			);
+			currentVersion = D54F5D4D1DC3DFBC00076548 /* GeoTask.xcdatamodel */;
+			path = GeoTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D54F5D351DC3DFBC00076548 /* Project object */;
+}

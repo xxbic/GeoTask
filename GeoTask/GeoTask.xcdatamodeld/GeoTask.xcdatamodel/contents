@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="16B2555" minimumToolsVersion="Automatic">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activityDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="poi" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="POI" inverseName="activity" inverseEntity="POI" syncable="YES"/>
+    </entity>
+    <entity name="POI" representedClassName="POI" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="localId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="poi" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <entity name="TapCoordinate" representedClassName="TapCoordinate" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="workingarea" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkingArea" inverseName="tapcoordinate" inverseEntity="WorkingArea" syncable="YES"/>
+    </entity>
+    <entity name="WorkingArea" representedClassName="WorkingArea" syncable="YES">
+        <relationship name="tapcoordinate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TapCoordinate" inverseName="workingarea" inverseEntity="TapCoordinate" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="439" positionY="261" width="128" height="90"/>
+        <element name="POI" positionX="243" positionY="135" width="128" height="150"/>
+        <element name="TapCoordinate" positionX="322" positionY="441" width="128" height="105"/>
+        <element name="WorkingArea" positionX="45" positionY="324" width="128" height="60"/>
+    </elements>
+</model>
