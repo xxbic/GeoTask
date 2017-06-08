@@ -116,8 +116,6 @@ static NSString *const cellIdentifyerActivity = @"cellIdentifyerActivity";
     POIActivityViewController *vc = [[POIActivityViewController alloc]initWithPOI:self.poi andActivity:nil];
     [self.navigationController pushViewController:vc animated:YES];
 
-    
-
 }
 
 

@@ -26,6 +26,7 @@
 
 + (LocationController *)sharedInstance;
 
-- (void)getAddressForLocation:(CLLocationCoordinate2D)location withCompletion:(void (^)(NSString *, NSError *))completion;
+- (void)getAddressForLocation:(CLLocationCoordinate2D)location
+               withCompletion:(void (^)(NSString *, NSError *))completion;
 
 @end

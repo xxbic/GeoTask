@@ -11,9 +11,8 @@
 #import "Constants.h"
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface AppSettings : NSObject
+@interface AppSetup : NSObject
 
-+ (AppSettings *)sharedInstance;
-- (void)setup;
++ (void)setup;
 
 @end

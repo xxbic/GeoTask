@@ -45,7 +45,8 @@ static LocationController* sharedCLDelegate = nil;
 - (void)getAddressForLocation:(CLLocationCoordinate2D)location withCompletion:(void (^)(NSString *, NSError *))completion{
     
     GMSGeocoder *geocoder = [GMSGeocoder geocoder];
-    [geocoder reverseGeocodeCoordinate:location completionHandler:^(GMSReverseGeocodeResponse *response, NSError *error) {
+    [geocoder reverseGeocodeCoordinate:location
+                     completionHandler:^(GMSReverseGeocodeResponse *response, NSError *error) {
         if (error || (response.firstResult.thoroughfare == nil &&
                       response.firstResult.locality == nil)) {
             completion(nil, error);

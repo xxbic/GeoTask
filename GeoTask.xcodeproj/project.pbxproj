@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FB9E32323747F42DA470F54 /* Pods_GeoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A6F543CD738744F8BD08C2 /* Pods_GeoTask.framework */; };
 		D53EFCE91DC93EBC0010C973 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53EFCE81DC93EBC0010C973 /* LocationController.m */; };
 		D546B0311DC406E70012D9AC /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0301DC406E70012D9AC /* MapView.m */; };
 		D546B0351DC40FCD0012D9AC /* POIListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0341DC40FCD0012D9AC /* POIListTableViewController.m */; };
 		D546B0381DC40FE70012D9AC /* POIDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0371DC40FE70012D9AC /* POIDetailsTableViewController.m */; };
 		D546B03B1DC410100012D9AC /* POIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B03A1DC410100012D9AC /* POIActivityViewController.m */; };
-		D546B0431DC410760012D9AC /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0421DC410760012D9AC /* AppSettings.m */; };
+		D546B0431DC410760012D9AC /* AppSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0421DC410760012D9AC /* AppSetup.m */; };
 		D546B0491DC531E60012D9AC /* POIDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0481DC531E60012D9AC /* POIDetailsView.m */; };
 		D546B0571DC5332C0012D9AC /* POIListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0561DC5332C0012D9AC /* POIListTableViewCell.m */; };
 		D546B05A1DC5335B0012D9AC /* POIHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D546B0591DC5335B0012D9AC /* POIHeaderTableViewCell.m */; };
@@ -31,13 +32,13 @@
 		D5B29EEB1DC6D1010052F3E6 /* WorkingArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE11DC6D1010052F3E6 /* WorkingArea.m */; };
 		D5B29EEC1DC6D1010052F3E6 /* POI+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE31DC6D1010052F3E6 /* POI+CoreDataProperties.m */; };
 		D5B29EED1DC6D1010052F3E6 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B29EE51DC6D1010052F3E6 /* POI.m */; };
-		FE8D76193A37E6FBEF2AA3EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F31A907FBA7232013CBD9F7 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34410877A164530666E4A806 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E8EA153B74AC6BBA42FD7FE /* Pods-GeoTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTask/Pods-GeoTask.release.xcconfig"; sourceTree = "<group>"; };
 		9F31A907FBA7232013CBD9F7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A27915F14515BFAF2E12DEB2 /* Pods-GeoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoTask/Pods-GeoTask.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A6F543CD738744F8BD08C2 /* Pods_GeoTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53EFCE71DC93EBC0010C973 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
 		D53EFCE81DC93EBC0010C973 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		D546B02F1DC406E70012D9AC /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
@@ -49,8 +50,8 @@
 		D546B0391DC410100012D9AC /* POIActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIActivityViewController.h; sourceTree = "<group>"; };
 		D546B03A1DC410100012D9AC /* POIActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIActivityViewController.m; sourceTree = "<group>"; };
 		D546B03D1DC410400012D9AC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		D546B0411DC410760012D9AC /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
-		D546B0421DC410760012D9AC /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		D546B0411DC410760012D9AC /* AppSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSetup.h; sourceTree = "<group>"; };
+		D546B0421DC410760012D9AC /* AppSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSetup.m; sourceTree = "<group>"; };
 		D546B0471DC531E60012D9AC /* POIDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIDetailsView.h; sourceTree = "<group>"; };
 		D546B0481DC531E60012D9AC /* POIDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIDetailsView.m; sourceTree = "<group>"; };
 		D546B0551DC5332C0012D9AC /* POIListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIListTableViewCell.h; sourceTree = "<group>"; };
@@ -93,28 +94,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8D76193A37E6FBEF2AA3EB /* Pods.framework in Frameworks */,
+				6FB9E32323747F42DA470F54 /* Pods_GeoTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E63700D5EBCC11AD3AD635 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34410877A164530666E4A806 /* Pods.debug.xcconfig */,
-				B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5B7043BB5DF92A0A3E3AE21D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9F31A907FBA7232013CBD9F7 /* Pods.framework */,
+				C7A6F543CD738744F8BD08C2 /* Pods_GeoTask.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		850FCD6C9E269A83EC22CB51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A27915F14515BFAF2E12DEB2 /* Pods-GeoTask.debug.xcconfig */,
+				2E8EA153B74AC6BBA42FD7FE /* Pods-GeoTask.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D546B02E1DC406D30012D9AC /* Views */ = {
@@ -179,8 +181,8 @@
 			children = (
 				D54F5D3F1DC3DFBC00076548 /* GeoTask */,
 				D54F5D3E1DC3DFBC00076548 /* Products */,
-				00E63700D5EBCC11AD3AD635 /* Pods */,
 				5B7043BB5DF92A0A3E3AE21D /* Frameworks */,
+				850FCD6C9E269A83EC22CB51 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,8 +264,8 @@
 			children = (
 				D54F5D431DC3DFBC00076548 /* AppDelegate.h */,
 				D54F5D441DC3DFBC00076548 /* AppDelegate.m */,
-				D546B0411DC410760012D9AC /* AppSettings.h */,
-				D546B0421DC410760012D9AC /* AppSettings.m */,
+				D546B0411DC410760012D9AC /* AppSetup.h */,
+				D546B0421DC410760012D9AC /* AppSetup.m */,
 				D546B03D1DC410400012D9AC /* Constants.h */,
 			);
 			name = Configuration;
@@ -276,12 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D54F5D571DC3DFBC00076548 /* Build configuration list for PBXNativeTarget "GeoTask" */;
 			buildPhases = (
-				AF733DE817D03ACF8AC628C5 /* Check Pods Manifest.lock */,
+				B3BCCFF62498FDE237695CB9 /* [CP] Check Pods Manifest.lock */,
 				D54F5D391DC3DFBC00076548 /* Sources */,
 				D54F5D3A1DC3DFBC00076548 /* Frameworks */,
 				D54F5D3B1DC3DFBC00076548 /* Resources */,
-				300D7BC9410A768990C02D13 /* Embed Pods Frameworks */,
-				BCE399EA2B0759D3B5A04BA9 /* Copy Pods Resources */,
+				8AAC9641C52036749E65E3E5 /* [CP] Embed Pods Frameworks */,
+				47DF25AE0653FCE536C2F35E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,49 +347,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		300D7BC9410A768990C02D13 /* Embed Pods Frameworks */ = {
+		47DF25AE0653FCE536C2F35E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoTask/Pods-GeoTask-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF733DE817D03ACF8AC628C5 /* Check Pods Manifest.lock */ = {
+		8AAC9641C52036749E65E3E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoTask/Pods-GeoTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCE399EA2B0759D3B5A04BA9 /* Copy Pods Resources */ = {
+		B3BCCFF62498FDE237695CB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -397,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D546B0431DC410760012D9AC /* AppSettings.m in Sources */,
+				D546B0431DC410760012D9AC /* AppSetup.m in Sources */,
 				D546B0381DC40FE70012D9AC /* POIDetailsTableViewController.m in Sources */,
 				D5B29EEA1DC6D1010052F3E6 /* WorkingArea+CoreDataProperties.m in Sources */,
 				D5B29EED1DC6D1010052F3E6 /* POI.m in Sources */,
@@ -510,7 +512,7 @@
 		};
 		D54F5D581DC3DFBC00076548 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34410877A164530666E4A806 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A27915F14515BFAF2E12DEB2 /* Pods-GeoTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,7 +527,7 @@
 		};
 		D54F5D591DC3DFBC00076548 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B45CE86F6A71090E4FC9574C /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2E8EA153B74AC6BBA42FD7FE /* Pods-GeoTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

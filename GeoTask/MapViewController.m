@@ -10,13 +10,13 @@
 #import "MapView.h"
 #import "POIListTableViewController.h"
 #import "POIDetailsTableViewController.h"
-#import "AppSettings.h"
 #import "TapCoordinate.h"
 #import "WorkingArea.h"
 #import "POI.h"
 #import "Activity.h"
 #import "TapCoordinate.h"
 #import "LocationController.h"
+#import "MagicalRecord.h"
 
 @interface MapViewController () <GMSMapViewDelegate, MapViewDelegate, LocationControllerDelegate>
 
@@ -27,10 +27,8 @@
 @property (nonatomic, strong) NSMutableArray *workingAreas;
 @property (nonatomic, strong) NSMutableArray *workingAreasGMSPolygones;
 @property (nonatomic, strong) NSMutableArray *listOfPOIs;
-
 @property (nonatomic, strong) NSMutableArray *tappedCoordinates;
 @property (nonatomic, strong) GMSPolyline *tempPolyline;
-
 @property (nonatomic, assign) BOOL isDrawingMode;
 @property (nonatomic, assign) BOOL overlayTapped;
 
